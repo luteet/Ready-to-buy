@@ -1,0 +1,8 @@
+<svg id="dashboard--reference" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Контур_12829" data-name="Контур 12829" d="M4,20v2H8.586L2,28.586,3.414,30,10,23.414V28h2V20Z" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_288" data-name="Прямоугольник 288" width="2" height="5" transform="translate(24 21)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_289" data-name="Прямоугольник 289" width="2" height="10" transform="translate(20 16)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_290" data-name="Прямоугольник 290" width="2" height="8" transform="translate(16 18)" fill="#bcbcbc"/>
+  <path id="Контур_12830" data-name="Контур 12830" d="M28,2H4A2,2,0,0,0,2,4V16H4V13H28V28H16v2H28a2,2,0,0,0,2-2V4a2,2,0,0,0-2-2ZM12,11H4V4h8Zm2,0V4H28v7Z" fill="#bcbcbc"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+</svg>

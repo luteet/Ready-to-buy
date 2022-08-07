@@ -1,0 +1,135 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-shipping-addresses
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Адреса отгрузки
+				a(href="#" data-popup="account-link").link Информация о разделе «Адреса отгрузки»
+
+			h2 Настройки склада
+
+
+			.form-sides.df
+				form(action="#").w100
+					.label
+						span.label-title.df.aic
+							span Выберите назначение данного склада
+							.block-with-question
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								img(src="img/question.svg" alt="Quoestion")
+						.select.bdrs8
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Выберите из списка шаблонов
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Выберите из списка шаблонов
+								.select__item Выберите из списка шаблонов1
+								.select__item Выберите из списка шаблонов2
+
+					label
+						span.label-title Адрес (точный)
+						input(placeholder="Введите адрес" type="text")
+					label
+						span.label-title ФИО контактного лица
+						input(placeholder="Чичкова Анастасия Вадимовна" type="text")
+
+					.inputs.df.aic
+						label
+							span.label-title Телефон
+							input(placeholder="+972534961174" type="tel")
+						label
+							span.label-title Email
+							input(placeholder="seraffimmaa@gmail.com" type="tel")
+
+					button.btn-bd Добавить адрес
+
+
+				.form-warnings.w100
+					p.warning
+						b
+							span ВАЖНО! 
+						| Вводите свой адрес в следующей последовательности: страна, область, город, улица, дом, квартира. По мере введения данных в строке будет появляться адрес. Когда вы увидите корректный адрес, нажмите на него, и он будет добавлен.
+					br
+					p.warning
+						b
+							span ВАЖНО! 
+						| Вводите свой адрес в следующей последовательности: страна, область, город, улица, дом, квартира. По мере введения данных в строке будет появляться адрес. Когда вы увидите корректный адрес, нажмите на него, и он будет добавлен.
+					br
+					p.warning
+						b Внимание! 
+						| Вводите свой адрес в следующей последовательности: страна, область, город, улица, дом, квартира. По мере введения данных в строке будет появляться адрес. Когда вы увидите корректный адрес, нажмите на него, и он будет добавлен.
+
+			.addresses
+
+				h2 Добавленные адреса
+				p В настоящий момент адресов не добавленно 
+
+
+	.popup.popup__cash-ok
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Валюта продавца
+			p Валютой продавца был выбран Российский рубль (RUB).
+			p Информация сохранена.
+			button.btn-grey-full.popup__close.bdrs8 Закрыть
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

@@ -1,0 +1,162 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-client.pug
+		main.w100
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Клиентам
+					span Счет CU
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Счет CU
+				a(href="#" data-popup="account-link").link О внутренней системе клиентских единиц (Customer Unit - CU)
+
+				.account.df
+					.account__item
+						p Курс CU
+						big $724,75
+					.account__item
+						p Персональный счет
+						big $3446,95
+					.account__item
+						p Счет CU
+						big $61221,62 CU ($44370372,49)
+
+			.top-up-account
+				h2 Пополнить счет CU
+				form(action="#")
+					label
+						span.label-title Сумма в долларах США
+						.label__input.df
+							input(type="number" placeholder="0" required).w100.bdrs8
+							button(type="submit").w100.bdrs8.btn-full Пополнить
+						.error Заполните пожалуйста поле с суммой
+					.form__get.df.aic
+						span Вы получите 0 CU
+						.reload-ico
+							img(src="img/reload.svg" alt="Ico")
+							span Обновить
+					button(type="submit").w100.bdrs8.dn.btn-full Пополнить
+
+			h2 Детализация счета
+
+			form(action="#")
+				.form__inputs.df.aic
+
+					label.type-of-transaction
+						span.label-title Тип операции
+						.select.bdrs8
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Любой тип
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Любой тип
+								.select__item Любой тип1
+								.select__item Любой тип2
+
+					.dates.df
+						label.label-of-date
+							span.label-title Дата начала
+							.input.df.aic.bdrs8
+								input(type="text" placeholder="10/06/2022").input-date-min
+								img(src="img/calendar.svg" alt="Ico")
+						label.label-of-date
+							span.label-title Дата окончания
+							.input.df.aic.bdrs8
+								input(type="text" placeholder="10/06/2022").input-date-max
+								img(src="img/calendar.svg" alt="Ico")
+
+				.form__buttons.df.aic
+
+					button(type="submit").form__submit.btn-bd.bdrs8 Применить
+					button.form__clear Сбросить фильтр
+
+					.exports.df.aic
+						a(href="#" download).downpdf Экспорт в PDF
+						a(href="#" download).downxls Экспорт в XLS
+
+
+
+			.table-ovf
+				table.w100
+					thead
+						tr
+							td ID
+							td Тип операции
+							td Сумма операции
+							td Дата
+							td Статус
+							td Примечание
+					tbody
+						tr
+							td 97913
+							td Пополнение счёта CU
+							td €52,5
+							td 14.02.2020
+							td Оплачен
+							td
+						tr
+							td 97913
+							td Пополнение счёта CU
+							td €52,5
+							td 14.02.2020
+							td Оплачен
+							td Оплата по заказу 174641
+
+
+			include includes/pagination.pug
+
+
+
+
+
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

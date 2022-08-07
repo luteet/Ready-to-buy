@@ -1,0 +1,8 @@
+<svg id="load-balancer--vpc" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Контур_12822" data-name="Контур 12822" d="M8,30H2V24H8ZM4,28H6V26H4Z" fill="#bcbcbc"/>
+  <path id="Контур_12823" data-name="Контур 12823" d="M19,30H13V24h6Zm-4-2h2V26H15Z" fill="#bcbcbc"/>
+  <path id="Контур_12824" data-name="Контур 12824" d="M30,30H24V24h6Zm-4-2h2V26H26Z" fill="#bcbcbc"/>
+  <path id="Контур_12825" data-name="Контур 12825" d="M16,10a4,4,0,1,1,4-4,4,4,0,0,1-4,4Zm0-6a2,2,0,1,0,2,2,2,2,0,0,0-2-2Z" fill="#bcbcbc"/>
+  <path id="Контур_12826" data-name="Контур 12826" d="M26,16H21a4,4,0,0,1-4-4H15a4,4,0,0,1-4,4H6a2,2,0,0,0-2,2v4H6V18h5a5.969,5.969,0,0,0,4-1.54V22h2V16.46A5.969,5.969,0,0,0,21,18h5v4h2V18A2,2,0,0,0,26,16Z" fill="#bcbcbc"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+</svg>

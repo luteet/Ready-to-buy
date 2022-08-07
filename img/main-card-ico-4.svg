@@ -1,0 +1,7 @@
+<svg id="delivery--parcel" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Контур_12803" data-name="Контур 12803" d="M29.482,8.624l-10-5.5a1,1,0,0,0-.964,0l-10,5.5a1,1,0,0,0,0,1.752L18,15.591V26.309l-3.036-1.669L14,26.391l4.518,2.485a1,1,0,0,0,.964,0l10-5.5A1,1,0,0,0,30,22.5V9.5a1,1,0,0,0-.518-.876ZM19,5.142,26.925,9.5,19,13.858,11.075,9.5Zm9,16.767-8,4.4V15.591l8-4.4Z" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_271" data-name="Прямоугольник 271" width="8" height="2" transform="translate(10 16) rotate(180)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_272" data-name="Прямоугольник 272" width="8" height="2" transform="translate(12 24) rotate(180)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_273" data-name="Прямоугольник 273" width="8" height="2" transform="translate(14 20) rotate(180)" fill="#bcbcbc"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+</svg>

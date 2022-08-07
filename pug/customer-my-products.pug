@@ -1,0 +1,492 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-my-products
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Мои товары
+				a(href="#" data-popup="account-link").link Информация о разделе «Мои товары»
+
+			h2 Валюта продавца
+
+			p Выберите региональную валюту, которая будет использоваться для Ваших товаров.
+
+			.label.select-cash
+				span.label-title Валюта
+				.label-bottom.df
+					.select.bdrs8
+						input(type="hidden")
+						.select__head.df.aic.jcsb
+							.select__current Выберите из списка шаблонов
+							img(src="img/triangle.svg" alt="Ico")
+						.select__body
+							.select__item Выберите из списка шаблонов
+							.select__item Выберите из списка шаблонов1
+							.select__item Выберите из списка шаблонов2
+					button(data-popup="cash-ok").bdrs8.btn-bd Сохранить
+
+			h2 Список моих товаров
+
+			.customer-my-products__buttons.df.aic
+				a(href="customer-add-product.html").add-product.bdrs8.df.aic.jcc.btn-full Добавить товар
+				a(href="customer-my-products-preview.html").preview-products.bdrs8.df.aic.jcc
+					span Превью товаров
+					img(src="img/eye.svg" alt="ico")
+
+			.customer-my-products__tabs-various
+
+				.customer-my-products__tabs.df.aic
+					.tab.tab_active
+						span Одобренные
+						span.count 203
+					.tab
+						span Отклонённые
+						span 10
+					.tab
+						span На модерации
+						span 0
+					.tab
+						span Снято с продажи
+						span 0
+					.tab
+						span Некорректная цена
+						span 0
+					.tab
+						span Черновик
+						span 0
+
+
+				label.select__tabs
+					span.label-title Статус товаров
+					.select.bdrs8
+						.select__head.df.aic.jcsb
+							.select__current
+								span Одобренные
+								span.count  203
+							img(src="img/triangle.svg" alt="Ico")
+								
+						.select__body
+							.tab.select__item
+								span Одобренные
+								span.count  203
+							.tab.select__item
+								span Отклонённые
+								span  10
+							.tab.select__item
+								span На модерации
+								span  0
+							.tab.select__item
+								span Снято с продажи
+								span  0
+							.tab.select__item
+								span Некорректная цена
+								span  0
+							.tab.select__item
+								span Черновик
+								span  0
+
+			.customer-my-products__inner
+
+				.customer-my-products__block
+
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text
+									span Товар (силами продавца)
+									span.no-stock Нет на складе
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Доставка
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Запустить
+								img(src="img/play.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").button_active.green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text Товар (силами продавца)
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Редактировать
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Остановить
+								img(src="img/stop.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").button_active.green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+					include includes/pagination.pug
+
+				.customer-my-products__block
+
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text Товар (силами продавца)
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Редактировать
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Остановить
+								img(src="img/stop.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text Товар (силами продавца)
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Редактировать
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Остановить
+								img(src="img/stop.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text Товар (силами продавца)
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Редактировать
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Остановить
+								img(src="img/stop.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+					.product.df
+						.product__left.df
+							.product__photo
+								img(src="img/my-order-photo.png" alt="Photo")
+
+							.product__info
+								.product__title Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+								.product__price.df.aic
+									.price
+										b $35,8 
+										//- | ($29,6 + 
+										//- span $6,2
+										//- | )
+									//- .price (TMT130 + 
+									//- 	span $6,2
+									//- 	| )
+								.product__text Товар (силами продавца)
+								.product__analitycs.df.aic
+									p Аналитика товара:
+									b 90 за сегодня
+									b 2951 за неделю
+									b 12951 за месяц
+								.product__comment Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+						.product__buttons.df.aic
+
+							a(href="#")
+								span Редактировать
+								img(src="img/edit.svg" alt="Ico")
+							a(href="#")
+								span Редактировать
+								img(src="img/delivery.svg" alt="Ico")
+							a(href="#")
+								span Остановить
+								img(src="img/stop.svg" alt="Ico")
+							a(href="#")
+								span Удалить
+								img(src="img/trash-can.svg" alt="Ico")
+							a(href="#")
+								span Список вниз
+								img(src="img/chevron--down.svg" alt="Ico")
+							a(href="#")
+								span Список вверх
+								img(src="img/chevron--up.svg" alt="Ico")
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M23,9.01l-1.5-4.5a.75.75,0,0,0-.75-.51H4.247a.75.75,0,0,0-.75.51L2,9.01a.892.892,0,0,0,0,.24v4.5a.75.75,0,0,0,.75.75H3.5V22H5V14.5H9.5V22h12V14.5h.75a.75.75,0,0,0,.75-.75V9.25a.892.892,0,0,0,0-.24ZM20,20.5H11v-6h9ZM21.5,13h-3V10H17v3h-3.75V10h-1.5v3H8V10H6.5v3h-3V9.37L4.787,5.5h15.42L21.5,9.37Z" transform="translate(-0.497 -1)"/><rect width="24" height="24" fill="none"/></svg>
+							a(href="#").green-item
+								span Какой-то текст
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8,14h8.25v1.5H8Zm0,3.75h9.75v1.5H8Z" transform="translate(-2 -3.5)"/><path d="M21.5,4H3.5A1.5,1.5,0,0,0,2,5.5v15A1.5,1.5,0,0,0,3.5,22h18A1.5,1.5,0,0,0,23,20.5V5.5A1.5,1.5,0,0,0,21.5,4Zm0,1.5V7H3.5V5.5Zm-18,15V8.5h18v12Z" transform="translate(-0.5 -1)"/><rect width="24" height="24" fill="none"/></svg>
+						.product__comment.product__comment_mob Комментарий модератора: Рекомендуем добавить более качественное изображение
+
+					include includes/pagination.pug
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+
+
+
+
+
+	.popup.popup__cash-ok
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Валюта продавца
+			p Валютой продавца был выбран Российский рубль (RUB).
+			p Информация сохранена.
+			button.btn-grey-full.popup__close.bdrs8 Закрыть
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

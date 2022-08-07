@@ -1,0 +1,130 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-my-sales
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Мои продажи
+				a(href="#" data-popup="account-link").link Информация о разделе «Мои продажи»
+
+
+			h2 Детализация продаж
+
+			.dates.df
+				label.label-of-date
+					span.label-title Дата начала
+					.input.df.aic.bdrs8
+						input(type="text" placeholder="10/06/2022").input-date
+						img(src="img/calendar.svg" alt="Ico")
+				label.label-of-date
+					span.label-title Дата окончания
+					.input.df.aic.bdrs8
+						input(type="text" placeholder="10/06/2022").input-date
+						img(src="img/calendar.svg" alt="Ico")
+
+			.form__buttons.df.aic
+
+				button(type="submit").form__submit.btn-bd.bdrs8 Применить
+				button.form__clear Сбросить фильтр
+
+				.exports.df.aic
+					a(href="#" download).downpdf Экспорт в PDF
+					a(href="#" download).downxls Экспорт в XLS
+
+			.my-order
+				.my-order__top
+					span Заказ 174683 от 24.06.2021
+					span Товар (силами продавца)
+				.my-order__item.df
+					.item__photo.df.aic.jcc
+						img(src="img/my-order-photo.png" alt="Photo")
+					.item__info
+						h3.item__name Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+						.item__price
+							b $35,8 
+							| ($29,6 + 
+							span $6,2
+							| )
+						.item__count 1 шт.
+				.my-order__bottom.df.aic
+					button(data-popup="confirmation").my-order__success-delivery.df.aic.jcc.bdrs8
+						span Подтвердить выплату
+						img(src="img/green-check.svg" alt="Ico")
+						img(src="img/green-check-hover.svg" alt="Ico").ico-hover
+					a(href="client-my-order_inner.html").my-order__info-order.df.aic.jcc.bdrs8
+						span Информация о заказе
+						img(src="img/document.svg" alt="Ico")
+
+
+	.popup.popup__confirmed
+		.popup__bgd
+		.popup__content
+			h2 Доставка подтверждена
+			p Доставка товара подтверждена
+			.buttons.df.aic.jcsb
+				button.popup__close.button__close.bdrs8.df.aic.jcc Закрыть
+	.popup.popup__confirmation
+		.popup__bgd
+		.popup__content
+			h2 Подтверждение доставки
+			p Вы уверены что хотите подтвердить доставку данного товара? 
+			span Товар:
+			p Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+			.buttons.df.aic.jcsb
+				button.popup__close.button__cancel.bdrs8.df.aic.jcc Нет
+				button(data-popup="confirmed").button__ok.bdrs8.df.aic.jcc Подтверждаю
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

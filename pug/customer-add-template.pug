@@ -1,0 +1,277 @@
+extends includes/header-add.pug
+
+block content
+
+
+	main.w100.customer-add-product.customer-add-template
+		include includes/aside-customer.pug
+		.main__top
+			.breadcrumbs
+				a(href="#")
+					span Главная
+				a(href="#")
+					span Продавцам
+				a(href="#")
+					span  Мои товары
+				span Добавить товар
+
+			button.menu-mob.df.aic
+				img(src="img/menu-mob-dots.svg" alt="Dots")
+				span Меню для клиента
+
+			h1 Добавить шаблон
+			a(href="#" data-popup="account-link").link Информация о разделе «Добавить шаблон»
+
+		form(action="#").wrapper-mini
+
+			.customer-add-product__block
+
+				h2 Шаблоны для автоматического заполнения
+
+				.df.jcsb.select-template
+					label.form-select.w100.input-big
+						span.label-title Шаблон
+						.select.bdrs8
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Выберите из списка шаблонов
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Выберите из списка шаблонов
+								.select__item Выберите из списка шаблонов1
+								.select__item Выберите из списка шаблонов2
+					.side-right
+						p Вы можете использовать ранее созданные шаблоны для более быстрого заполнения — какой-то текст описание для продавцов.
+
+			.customer-add-product__block
+
+				h2 Заголовок товара
+
+				label.input-big.db
+					span.label-title Название товара
+					input(type="text" required placeholder="Введите название товара").w100
+					.error Заполните поле
+
+
+			.customer-add-product__block.df.jcsb
+
+				.form-inputs.input-big
+					h2 Стоимость товара
+					.labels.df
+						label.input-low
+							span.label-title Цена в долларах <br /> (сумма, которую получит продавец)
+							input(type="number" value="100").w100
+						label.input-low
+							span.label-title Цена в CU <br /> (комиссионные)
+							input(type="number" value="100").w100
+						label.input-low
+							span.label-title Полная стоимость <br /> (общая стоимость продукта на сайте)
+							input(type="text" value="$110" disabled).w100
+						label.input-low
+							span.label-title Цена в валюте продавца <br /> (цена в вашей региональной валюте)
+							input(type="number" value="100").w100
+						label.input-low
+							span.label-title НДС <br /> (налог на добавленную стоимость)
+							input(type="number" value="100").w100
+				.side-right
+					p
+						b Внимание! 
+						| В поле «Цена в валюте продавца» указывайте цену Вашего товара/услуги, которую Вы хотите получить от покупателя (без учета CU), в Вашей местной валюте. Возьмите цену, которую Вы указали в долларах в поле «Цена в долларах» <br />и переведите ее по курсу в Вашу валюту.
+					p
+						b Внимание! 
+						| Вам необходимо самостоятельно следить за курсом валют. Пожалуйста, своевременно корректируйте цену товара/услуги в соответствии с актуальным курсом Вашей валюты.
+					p
+						b Внимание! 
+						| Если Вы являетесь плательщиком налога на добавленную стоимость (НДС), пожалуйста, указывайте в поле «Цена» стоимость Вашего товара/услуги <br />с включенным НДС.  В поле «НДС» укажите размер (процент) НДС, который Вы уплачиваете.
+
+			.customer-add-product__block
+
+				h2 Информация о товаре
+
+				label.input-medium.db
+					span.label-title Товар или Услуга
+					.select.bdrs8.w100
+						input(type="hidden")
+						.select__head.df.aic.jcsb
+							.select__current Выберите значение
+							img(src="img/triangle.svg" alt="Ico")
+						.select__body
+							.select__item Выберите из списка шаблонов
+							.select__item Выберите из списка шаблонов1
+							.select__item Выберите из списка шаблонов2
+				label.input-medium.db
+					span.label-title Выберите тип доставки
+					.select.bdrs8.w100
+						input(type="hidden")
+						.select__head.df.aic.jcsb
+							.select__current Выберите значение
+							img(src="img/triangle.svg" alt="Ico")
+						.select__body
+							.select__item Выберите из списка шаблонов
+							.select__item Выберите из списка шаблонов1
+							.select__item Выберите из списка шаблонов2
+				label.input-medium.db
+					span.label-title (не более 30 кг. и не менее 0.01 кг.)
+					input(placeholder="Введите вес Вес" required type="text").w100
+					.error Заполните поле
+				label.db
+					span.label-title Категория
+					.labels.df.labels-category
+						.select.bdrs8.w100
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Мода
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Выберите из списка шаблонов
+								.select__item Выберите из списка шаблонов1
+								.select__item Выберите из списка шаблонов2
+						label
+							span.label-title Подкатегория
+							.select.bdrs8.w100
+								input(type="hidden")
+								.select__head.df.aic.jcsb
+									.select__current Женская одежда
+									img(src="img/triangle.svg" alt="Ico")
+								.select__body
+									.select__item Выберите из списка шаблонов
+									.select__item Выберите из списка шаблонов1
+									.select__item Выберите из списка шаблонов2
+						label
+							span.label-title Подкатегория
+							.select.bdrs8.w100
+								input(type="hidden")
+								.select__head.df.aic.jcsb
+									.select__current Джинсы
+									img(src="img/triangle.svg" alt="Ico")
+								.select__body
+									.select__item Выберите из списка шаблонов
+									.select__item Выберите из списка шаблонов1
+									.select__item Выберите из списка шаблонов2
+
+				.input-link.df.aife
+					label.input-big
+						span.label-title Ссылка на оплату напрямую продавцу
+						input(type="text" placeholder="Введите ссылку" required).w100
+						.error Заполните поле
+					.side-right
+						p
+							b Внимание! 
+							| При отсутствии http/https в начале ссылки системой будет автоматически подставлено http
+
+				label.input-big.db.input-max-symbols
+					span.label-title Полное описание товара
+					textarea.w100
+					.max-symbols
+						span.black 0 
+						span / <span class="count-symbols">100</span> символов
+				label.input-big.db.input-max-symbols
+					span.label-title О продавце
+					textarea.w100
+					.max-symbols
+						span.black 0 
+						span / <span class="count-symbols">50</span> символов
+
+				.label.load-photos
+					span.label-title Изображения товара (макс. 10 Мб на файл)
+					.df.aic.jcsb
+						input(type="file" preview-target-id="file-id-1")#file-id-1
+						label(for="file-id-1")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-1-1.file-photo
+						input(type="file" preview-target-id="file-id-2")#file-id-2
+						label(for="file-id-2")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-2-1.file-photo
+						input(type="file" preview-target-id="file-id-3")#file-id-3
+						label(for="file-id-3")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-3-1.file-photo
+						input(type="file" preview-target-id="file-id-4")#file-id-4
+						label(for="file-id-4")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-4-1.file-photo
+						input(type="file" preview-target-id="file-id-5")#file-id-5
+						label(for="file-id-5")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-5-1.file-photo
+						input(type="file" preview-target-id="file-id-6")#file-id-6
+						label(for="file-id-6")
+							img(src="img/plus.svg" alt="Plus")
+							#file-id-6-1.file-photo
+
+			.customer-add-product__block
+
+				h2 Обратная связь (не обязательно к заполнению)
+
+				.recall.df
+					label.w100
+						span.label-title Комментарий для модератора
+						textarea(placeholder="Введите комментарий, либо вопрос, если он есть").w100
+					//- label.w100
+						span.label-title Ответ модератора
+						textarea(disabled).w100 Ответ появляется справа только тогда, когда он есть. При отсутствии комментария модератора, этот блок не появлятеся
+
+				//- input(type="checkbox")#checkbox-id-1
+				//- label(for="checkbox-id-1").form__checkbox С 
+					a(href="#") правовыми положениями 
+					| проекта ознакомлен и согласен.
+
+				.form__buttons.df.aic
+					button(type="submit").w100.bdrs8.form__add.btn-full Добавить шаблон
+					button.w100.bdrs8.form__cancel Отменить
+
+
+
+
+	.popup.popup__save-template
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Сохранение шаблона
+			p Укажите название для шаблона, далее он появится в списке <br />шаблонов при создании товаров.
+			label.w100
+				span.label-title Название шаблона
+				input(type="text" placeholder="Введите название для шаблона").w100
+			.buttons.df.aic.jcsb
+				button.btn-full.w100 Сохранить
+				button.btn-grey-full.popup__close.w100 Закрыть
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

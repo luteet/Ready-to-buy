@@ -1,0 +1,10 @@
+<svg id="result" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect id="Прямоугольник_223" data-name="Прямоугольник 223" width="8" height="2" transform="translate(14 23)" fill="#48d739"/>
+  <rect id="Прямоугольник_224" data-name="Прямоугольник 224" width="2" height="2" transform="translate(10 23)" fill="#48d739"/>
+  <rect id="Прямоугольник_225" data-name="Прямоугольник 225" width="8" height="2" transform="translate(14 18)" fill="#48d739"/>
+  <rect id="Прямоугольник_226" data-name="Прямоугольник 226" width="2" height="2" transform="translate(10 18)" fill="#48d739"/>
+  <rect id="Прямоугольник_227" data-name="Прямоугольник 227" width="8" height="2" transform="translate(14 13)" fill="#48d739"/>
+  <rect id="Прямоугольник_228" data-name="Прямоугольник 228" width="2" height="2" transform="translate(10 13)" fill="#48d739"/>
+  <path id="Контур_12781" data-name="Контур 12781" d="M25,5H22V4a2,2,0,0,0-2-2H12a2,2,0,0,0-2,2V5H7A2,2,0,0,0,5,7V28a2,2,0,0,0,2,2H25a2,2,0,0,0,2-2V7A2,2,0,0,0,25,5ZM12,4h8V8H12ZM25,28H7V7h3v3H22V7h3Z" fill="#48d739"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg id="user--profile" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Контур_12796" data-name="Контур 12796" d="M12,4A5,5,0,1,1,7,9a5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,12,2Z" fill="#bcbcbc"/>
+  <path id="Контур_12797" data-name="Контур 12797" d="M22,30H20V25a5,5,0,0,0-5-5H9a5,5,0,0,0-5,5v5H2V25a7,7,0,0,1,7-7h6a7,7,0,0,1,7,7Z" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_266" data-name="Прямоугольник 266" width="10" height="2" transform="translate(22 4)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_267" data-name="Прямоугольник 267" width="10" height="2" transform="translate(22 9)" fill="#bcbcbc"/>
+  <rect id="Прямоугольник_268" data-name="Прямоугольник 268" width="7" height="2" transform="translate(22 14)" fill="#bcbcbc"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+</svg>

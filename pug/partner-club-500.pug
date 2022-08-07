@@ -1,0 +1,97 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-partner.pug
+		main.w100.partner-club-500
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Клуб 500
+				a(href="#" data-popup="account-link").link Информация о разделе «Клуб 500»
+
+				.account.df
+					.account__item
+						.df
+							p Клуб 500
+							.block-with-question
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								img(src="img/question.svg" alt="Quoestion")
+						big Да
+					.account__item
+						p Статус
+						big Партнёр
+					.account__item
+						p Квалификация
+						big 0%
+
+
+			.client-addresses__addresses
+
+				.product.df
+					.product__left.df
+						.product__info
+							b.product__title Пакет CU $500
+							.product__information
+								span Заказ 174683 от 24.06.2021
+
+					.product__buttons.df
+
+						p оплачено 12.02.2020
+
+
+
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

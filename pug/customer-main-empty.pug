@@ -1,0 +1,309 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-main
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Клиентам
+					span Счет CU
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Бэк-офис продавца
+				a(href="#" data-popup="account-link").link Информация о разделе «Бэк-офис продавца»
+
+			.customer-main__block
+
+				.customer-main__item
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 1. Заполнить <br />личные данные
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-1.svg" alt="Ico")
+
+					.item__center
+						span.item__span Ваши данные:
+						p Иванов Иван Иванович
+						p ID 8472655
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 2. Купить пакет <br />продавца
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-2.svg" alt="Ico")
+
+					.item__center
+						span.item__span Вы выбрали:
+						p На текущий момент Вы не выбрали пакет продавца
+
+					.item__bottom
+						a(href="#").df.aic
+							span Выбрать другой пакет
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 3. Инструкция <br />для продавца
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-3.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы найдёте:
+						ul
+							li Преимущества Ready to Buy
+							li Рекомендации по размещению товара на продажу.
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 4. Заполнить адреса <br />отгрузки
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-4.svg" alt="Ico")
+
+					.item__center
+						span.item__span Последний адрес отгрузки:
+						p На текущий момент Вы не заполнили адреса отгрузки
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать или добавить
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 5. Заполнить платежные <br />реквизиты
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-5.svg" alt="Ico")
+
+					.item__center
+						span.item__span Вы выбрали:
+
+						p На текущий момент Вы не выбрали платёжную систему
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать или добавить
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 6. Создать свой <br />магазин
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-6.svg" alt="Ico")
+
+					.item__center
+						span.item__span Ваш магазин:
+
+						p На текущий момент Вы не создали магазин
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать магазин
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 7. Создать <br />товар
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-7.svg" alt="Ico")
+
+					.item__center
+						span.item__span Ваш последний товар:
+
+						p На текущий момент Вы не создали ни одного товара
+
+					.item__bottom
+						a(href="#").df.aic
+							span Мои товары
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 8. Мои товары
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-8.svg" alt="Ico")
+
+					.item__center
+						span.item__span Товаров:
+
+						p На текущий момент у Вас нет товаров
+
+					.item__bottom
+						a(href="#").df.aic
+							span Мои товары
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 9. Мои продажи
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-9.svg" alt="Ico")
+
+					.item__center
+						span.item__span За текущий период продано товаров на сумму:
+
+						p На текущий момент у Вас не было продаж
+
+					.item__bottom
+						a(href="#").df.aic
+							span Посмотреть подробнее
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 10. Заполнить <br />шаблоны 
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-10.svg" alt="Ico")
+
+					.item__center
+						span.item__span Готовые шаблоны:
+
+						p На текущий момент у Вас нет шаблонов
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать или добавить
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 11. Реферальная <br />ссылка
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-11.svg" alt="Ico")
+
+					.item__center
+						span.item__span Пригласить клиента:
+
+						a(href="#").referal https://office.readytobuystore.com//register/78CC6E62
+
+					.item__bottom
+						a(href="#").df.aic
+							span Посмотреть подробнее
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span Посмотреть мои <br />товары
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-8.svg" alt="Ico")
+
+					.item__center
+						span.item__span Товаров:
+
+						.status.df.aic.jcsb
+							a(href="#").status__item.status__item_good 172 одобренных
+							a(href="#").status__item.status__item_moder 10 на модерации
+							a(href="#").status__item.status__item_decline 59 отклоненных
+
+					.item__bottom
+						a(href="#").df.aic
+							span Мои товары
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+
+
+			
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

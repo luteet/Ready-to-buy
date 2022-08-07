@@ -1,0 +1,245 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-account
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Клиентам
+					span Счет CU
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Личный счёт
+				a(href="#" data-popup="account-link").link Информация о разделе «Личный счёт»
+
+				//- .account.df
+					.account__item
+						p Курс CU
+						big $724,75
+					.account__item
+						p Персональный счет
+						big $3446,95
+
+			.top-up-account
+				h2 Пополнить счет CU
+				form(action="#")
+					.form__grid
+						label
+							span.label-title Сумма, которую вы хотите перечислить с персонального счета
+							.label__input.df
+								input(type="number" placeholder="0" required).w100.bdrs8
+							.error Заполните пожалуйста поле с суммой
+						label
+							span.label-title Номер агента, которому делать перечисление
+							.label__input.df
+								input(type="number" placeholder="0" required).w100.bdrs8
+							.error Заполните пожалуйста поле с суммой
+						//- label
+							span.label-title Введите финансовый пароль
+							.label__input.df
+								input(type="number" placeholder="0" required).w100.bdrs8
+							.error Заполните пожалуйста поле с суммой
+						//- p
+							b Внимание! 
+							| Если Вы зарегистрировались на этом сайте, финансовый пароль был Вам выслан при регистрации.
+					button(type="submit").bdrs8.btn-full Продолжить
+
+			h2 Детализация счета
+
+
+			.customer-my-products__tabs-various
+
+				.customer-my-products__tabs.df.aic
+					.tab.tab_active
+						span Детализация до 01/04/202
+					.tab
+						span Детализация после 01/04/202
+
+
+				label.select__tabs
+					span.label-title Статус товаров
+					.select.bdrs8
+						.select__head.df.aic.jcsb
+							.select__current
+								span Детализация до 01/04/2022
+							img(src="img/triangle.svg" alt="Ico")
+								
+						.select__body
+							.tab.select__item
+								span Детализация до 01/04/2022
+							.tab.select__item
+								span Детализация после 01/04/2022
+
+
+			.customer-my-products__inner
+
+				.customer-my-products__block
+
+					form(action="#")
+						.form__inputs.df.aic
+
+							.dates.df
+								label.label-of-date
+									span.label-title Дата начала
+									.input.df.aic.bdrs8
+										input(type="text" placeholder="10/06/2022").input-date
+										img(src="img/calendar.svg" alt="Ico")
+								label.label-of-date
+									span.label-title Дата окончания
+									.input.df.aic.bdrs8
+										input(type="text" placeholder="10/06/2022").input-date
+										img(src="img/calendar.svg" alt="Ico")
+
+						.form__buttons.df.aic
+
+							button(type="submit").form__submit.btn-bd.bdrs8 Применить
+							button.form__clear Сбросить фильтр
+
+							.exports.df.aic
+								a(href="#" download).downpdf Экспорт в PDF
+								a(href="#" download).downxls Экспорт в XLS
+
+
+					.table-ovf
+						table.w100
+							thead
+								tr
+									td Дата
+									td Сумма
+									td Тип
+									td Примечание
+							tbody
+								tr
+									td 15.10.2021
+									td $186,02
+									td Начисление по итогам периода
+									td Сетевой бонус за Сентябрь 2021
+
+					
+
+					include includes/pagination.pug
+
+				.customer-my-products__block
+
+					form(action="#")
+						.form__inputs.df.aic
+
+							.dates.df
+								label.label-of-date
+									span.label-title Дата начала
+									.input.df.aic.bdrs8
+										input(type="text" placeholder="10/06/2022").input-date
+										img(src="img/calendar.svg" alt="Ico")
+								label.label-of-date
+									span.label-title Дата окончания
+									.input.df.aic.bdrs8
+										input(type="text" placeholder="10/06/2022").input-date
+										img(src="img/calendar.svg" alt="Ico")
+
+						.form__buttons.df.aic
+
+							button(type="submit").form__submit.btn-bd.bdrs8 Применить
+							button.form__clear Сбросить фильтр
+
+							.exports.df.aic
+								a(href="#" download).downpdf Экспорт в PDF
+								a(href="#" download).downxls Экспорт в XLS
+
+
+					.table-ovf
+						table.w100
+							thead
+								tr
+									td Дата
+									td Сумма
+									td Тип
+									td Примечание
+							tbody
+								tr
+									td 15.10.2021
+									td $186,02
+									td Начисление по итогам периода
+									td Сетевой бонус за Сентябрь 2021
+								tr
+									td 15.10.2021
+									td $186,02
+									td Начисление по итогам периода
+									td Сетевой бонус за Сентябрь 2021
+								tr
+									td 15.10.2021
+									td $186,02
+									td Начисление по итогам периода
+									td Сетевой бонус за Сентябрь 2021
+
+					
+
+					include includes/pagination.pug
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+				.customer-my-products__block.customer-my-products__block_null
+
+					p На текущий момент у Вас нет одобренных товаров
+
+
+
+
+
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

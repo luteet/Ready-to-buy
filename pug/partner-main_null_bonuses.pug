@@ -1,0 +1,321 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.partner-main
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Клиентам
+					span Счет CU
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Бэк-офис партнёра
+				a(href="#" data-popup="account-link").link Информация о разделе «Бэк-офис партнёра»
+
+			.customer-main__block
+
+				.customer-main__item
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 1. Заполнить <br />личные данные
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-1.svg" alt="Ico")
+
+					.item__center
+						span.item__span Ваши данные:
+						p Иванов Иван Иванович
+						p ID 8472655
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 2. Купить пакет <br />продавца
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-2.svg" alt="Ico")
+
+					.item__center
+						span.item__span Вы выбрали:
+						p На текущий момент Вы не выбрали пакет партнёра
+
+					.item__bottom
+						a(href="#").df.aic
+							span Выбрать другой пакет
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 3. Личный счет
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-5.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы найдёте:
+						ul
+							li Персональный счет: $3 446,95
+							li
+								p
+									span Курс CU: $758,46
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 4. Cчет CU
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-13.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы найдёте:
+						ul
+							li Счет CU: $3 446,95
+							li
+								p
+									span Курс CU: $758,46
+
+					.item__bottom
+						a(href="#").df.aic
+							span Отредактировать или добавить
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 5. Реферальная <br />ссылка
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-11.svg" alt="Ico")
+
+					.item__center
+						span.item__span Ссылка для привлечения новых партнёров:
+
+						a(href="#").referal https://office.readytobuystore.com//register/78CC6E62
+
+					.item__bottom
+						a(href="#").df.aic
+							span Посмотреть подробнее
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 6. Посмотреть <br />мою структуру
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-15.svg" alt="Ico")
+
+					.item__center
+						span.item__span Мои партнёры:
+
+						p В сети 0 чел.
+
+						.top-up.df.aic
+							p Прирост за текущий период 
+							.df.aic
+								.top-up__item.top-up__item_grey 0
+
+					.item__bottom
+						a(href="#").df.aic
+							span Посмотреть подробнее
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 7. Пополнить счет <br />партнеру
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-16.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы можете:
+
+						p Пополнить счёт любому партнёру из своей сети
+
+					.item__bottom
+						a(href="#").df.aic
+							span Пополнить счет
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 8. Посмотреть <br />мои бонусы
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-17.svg" alt="Ico")
+
+					.item__center
+						span.item__span Бонусы за текущий период:
+
+						p На текущий момент нет бонусов
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 9. Клуб 500
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-18.svg" alt="Ico")
+
+					.item__center
+						span.item__span Покупки более 500 долларов:
+
+						p На текущий момент, покупок более 500 долларов совершено не было
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 10. Посмотреть <br />маркетинг план
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-19.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы найдёте:
+
+						ul
+							li Преимущества Ready to Buy
+							li Рекомендации по привлечению партнёров.
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 11. Посмотреть <br />рейтинг
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-20.svg" alt="Ico")
+
+					.item__center
+						span.item__span ТОП 30 партнеров:
+
+						p В этом разделе Вы сможете выбрать интересующий Вас период и распечатать рейтинг
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				.customer-main__item.customer-main__item_empty
+
+					.item__top.df.aifs.jcsb
+
+						h3.item__title
+							span 12. Открыть <br />материалы
+							img(src="img/green-check-circle.svg" alt="Check")
+						.item__ico
+							img(src="img/main-card-ico-21.svg" alt="Ico")
+
+					.item__center
+						span.item__span В данном разделе Вы найдёте:
+
+						p Различные материалы: флаеры, наклейки, видео с мероприятий
+
+					.item__bottom
+						a(href="#").df.aic
+							span Перейти в раздел
+							img(src="img/arr-right-green.svg" alt="Arr")
+
+				
+
+
+
+			
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

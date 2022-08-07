@@ -1,0 +1,111 @@
+.page-search {
+    display: grid;
+    grid-template-columns: 285px auto;
+
+    min-height: 100%;
+
+    & > .full {
+        grid-column: 1/3;
+    }
+
+    & .breadcrumbs {
+        grid-column: 1/3;
+    }
+
+    &__list {
+        width: 100%;
+        flex: 1 1 100%;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        & > * {
+            width: calc(100% - 20px);
+        }
+    }
+
+    // .page-search__result
+
+    &__result {
+
+        // .page-search__result--block
+
+        &--block {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            padding: 12px 0px;
+        }
+
+        // .page-search__result--title
+
+        &--title {
+            margin-bottom: 15px;
+
+            font-weight: 500;
+            font-size: 26px;
+        }
+
+        // .page-search__result--value
+
+        &--value {
+            padding-left: 8px;
+            font-size: 14px;
+            color: #777;
+
+            padding-bottom: 10px;
+        }
+
+        // .page-search__result--footer
+
+        &--footer {
+            flex: 1 1 100%;
+        }
+
+        // .page-search__result--link
+
+        &--link {
+            margin-top: 12px;
+
+            display: inline-flex;
+            align-items: center;
+
+            & svg {
+                margin-left: 5px;
+            }
+            
+            text-decoration: underline;
+            font-size: 14px;
+            color: #48d739;
+            &:hover {
+                color: #48d739;
+            }
+
+        }
+
+        // .page-search__result--row
+
+        &--row {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -10px;
+            
+        }
+
+        // .page-search__result--btn
+
+        &--btn {
+            display: inline-block;
+            padding: 15px; margin: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+
+            transition: background .2s ease-in-out;
+            &:hover {
+                background: #ddd;
+            }
+        }
+    }
+
+}

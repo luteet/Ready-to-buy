@@ -1,0 +1,100 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-my-shop.customer-my-shop-moderation
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Мой магазин
+				a(href="#" data-popup="account-link").link Информация о разделе «Мой магазин»
+
+			p.warning Магазин сейчас находится на модерации. Дождитесь окончания проверки, как только магазин пройдет проверку Ваш магазин будет <br />опубликован либо модератор оставит Вам рекомендации на этой странице и Вы сможете их прочитать.
+
+			h2 Данные магазина
+
+			label.w100
+				span.label-title Название магазина
+				input(placeholder="Введите название магазина" disabled value="Sneakers Store Box")
+			label.w100
+				span.label-title Описание магазина
+				textarea(placeholder="Введите описание мин. 50, макс. 4000 символов" disabled) Друзья, всем привет! В нашем интернет магазине находится только качественная обувь. И мы хотим предоставить вам возможность оценить и почувствовать на себе в полной мере наш качественный продукт, а самое главное, цена намного ниже, чем в обычных магазинах. Каждый месяц проходят акции и скидки на весь ассортимент. Территориально мы находимся в г.Новоуральск, доставка по городу бесплатно, также отправляем по Всему миру !!!
+			.label.load-photos.w100
+				span.label-title Логотип (рекомендуем загружать логотипы на прозрачном или белом фоне) 
+				input(type="file" preview-target-id="file-id-1")#file-id-1
+				label(for="file-id-1")
+					img(src="img/plus.svg" alt="Plus")
+					#file-id-1-1.file-photo
+
+			h2 Обратная связь (не обязательно к заполнению)
+
+			.recall.df
+				label.w100
+					span.label-title Комментарий для модератора
+					textarea(placeholder="Введите комментарий, либо вопрос, если он есть" disabled).w100
+				label.w100
+					span.label-title Комментарий для модератора
+					textarea(disabled).w100 Введите комментарий, либо вопрос, если он есть
+
+			.customer-my-shop__buttons.df.aic
+				button(type="submit" data-popup="remove-moderation").btn-grey-full Снять с модерации
+
+
+
+
+
+
+
+	.popup.popup__remove-moderation
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Снять с модерации
+			p Вы действительно хотите снять данный магазин с модерации?
+			.buttons.df.aic.jscb
+				a(href="#").btn-grey-bd.popup__close Закрыть
+				a(href="#").btn-grey-full Снять с модерации
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

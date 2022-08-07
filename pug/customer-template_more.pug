@@ -1,0 +1,117 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-template
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Мои шаблоны
+				a(href="#" data-popup="account-link").link Информация о разделе «Мои шаблоны»
+
+			h2 Список сохраненных шаблонов при создании товаров
+
+			a(href="customer-add-template.html").btn-bd Добавить новый шаблон
+
+			.client-addresses__addresses
+
+				.product.df
+					.product__left.df
+						.product__info
+							b.product__title Название шаблона 1
+							p.product__location Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл. — название товара
+
+					.product__buttons.df.aic
+
+						a(href="client-address-edit.html")
+							span Редактировать
+							img(src="img/edit.svg" alt="Ico")
+						a(href="#")
+							span Удалить
+							img(src="img/trash-can.svg" alt="Ico")
+				.product.df
+					.product__left.df
+						.product__info
+							b.product__title Название шаблона 2
+							p.product__location Энергетическая смесь Индиго обеспечивает часы естественной и продолжительной энергии без побочных эффектов. (3 товара)
+
+					.product__buttons.df.aic
+
+						a(href="client-address-edit.html")
+							span Редактировать
+							img(src="img/edit.svg" alt="Ico")
+						a(href="#")
+							span Удалить
+							img(src="img/trash-can.svg" alt="Ico")
+				.product.df
+					.product__left.df
+						.product__info
+							b.product__title Название шаблона 2
+							p.product__location Энергетическая смесь Индиго обеспечивает часы естественной и продолжительной энергии без побочных эффектов. (3 товара)
+
+					.product__buttons.df.aic
+
+						a(href="client-address-edit.html")
+							span Редактировать
+							img(src="img/edit.svg" alt="Ico")
+						a(href="#")
+							span Удалить
+							img(src="img/trash-can.svg" alt="Ico")
+
+			include includes/pagination.pug
+
+
+
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

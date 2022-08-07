@@ -1,0 +1,161 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-partner.pug
+		main.w100.customer-my-profile
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Мой профиль
+				a(href="#" data-popup="account-link").link Информация о разделе «Мой профиль»
+
+			.top-up-account
+				h2 Данные агента
+				.top-up-account__block.df.jcsb
+					.top-up-account__item
+						.item__info
+							span Свой р/номер:
+							p 57803
+					.top-up-account__item
+						.item__info
+							span ФИО:
+							p Чичкова Анастасия Вадимовна
+						.item__info
+							span Дата рождения:
+							p 17.12.1989
+						.item__info
+							span Паспорт:
+							p 4510 742767
+					.top-up-account__item
+						.item__info
+							span Страна:
+							p Israel
+						.item__info
+							span Город:
+							p Telaviv
+						.item__info
+							span Адрес:
+							p Ziman,20,7,
+					.top-up-account__item
+						.item__info
+							span Номер телефона:
+							p +79178603803
+						.item__info
+							span Email:
+							p seraffimmaa@gmail.com
+
+			.customer-my-profile__sides.df.jcsb
+				.customer-my-profile__lft.w100
+					h2 Изменение личных данных
+
+					label.label-of-date
+						span.label-title Дата рождения
+						.input.df.aic.bdrs8
+							input(type="text" placeholder="10/06/2022").input-date
+							img(src="img/calendar.svg" alt="Ico")
+
+					label.w100
+						span.label-title Адрес
+						input(type="text" value="Ziman,20,7,")
+
+					.inputs.w100
+						label.w100
+							span.label-title Телефон
+							input(type="text" value="+972534961174")
+						label.w100
+							span.label-title Skype
+							input(type="text" placeholder="Введите логин")
+
+					button.btn-bd Сохранить
+				form(action="#").customer-my-profile__rht.w100
+
+					h2 Смена адреса почтового ящика
+
+					label.w100
+						span.label-title Ваш текущий E-mail
+						input(type="text" value="seraffimmaa@gmail.com")
+
+					label.w100
+						span.label-title Указать новый E-mail
+						input(type="text" required value="seraffimmaa@gmail.com")
+						span.error Email не уникален
+
+					label.w100
+						span.label-title Введите финансовый пароль
+						input(type="text" placeholder="Введите логин")
+
+					p
+						b Внимание! 
+						| Если Вы зарегистрировались на этом сайте, финансовый пароль был Вам выслан при регистрации.
+
+					button(type="submit").btn-bd Изменить Email на новый
+
+
+
+
+
+
+
+
+	.popup.popup__cash-ok
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Валюта продавца
+			p Валютой продавца был выбран Российский рубль (RUB).
+			p Информация сохранена.
+			button.btn-grey-full.popup__close.bdrs8 Закрыть
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

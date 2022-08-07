@@ -1,0 +1,171 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-client.pug
+		main.w100.client-basket.client-payment
+			.breadcrumbs
+				a(href="#")
+					span Главная
+				a(href="#")
+					span Клиентам
+				span Счет CU
+
+			button.menu-mob.df.aic
+				img(src="img/menu-mob-dots.svg" alt="Dots")
+				span Меню для клиента
+
+			.client-basket__top
+
+				h1 Оплата заказа
+
+
+			.my-order
+				.my-order__item.df
+					.item__photo.df.aic.jcc
+						img(src="img/my-order-photo.png" alt="Photo")
+					.item__info
+						h3.item__name Mol & B Refreshing Skin Toner - Освежающий тоник для лица 150 мл.
+						.item__price
+							b $35,8 
+							| ($29,6 + 
+							span $6,2
+							| )
+						.item__count 1 шт.
+					.item__rht.df.aic
+						.counter__block
+							.counter.df.aic
+								.counter__minus -
+								input(value="5" type="text").counter__num
+								.counter__plus +
+							span.bottom-span на складе 10 шт.
+						button.item__delete
+							img(src="img/trash-can.svg")
+
+			.client-payment__block
+
+				h2 Тип доставки: Силами продавца
+
+				.label
+					span.label-title Адрес склада
+					input(type="radio")#id-label-1
+					label(for="id-label-1") Россия, Россия
+
+			.client-payment__block
+
+				h2 При оформлении заказа
+
+				.grey-block.grey-block-error
+					.grey-block__block.df.aic
+						.grey-block__text 2,50 CU
+						p эта сумма спишется с вашего счета CU при нажатии кнопки «Оплатить».
+					.check.check-good.df.aic
+						img(src="img/green-check.svg" alt="Ico")
+						span у вас достаточно средств на счёте
+					.check.check-bad.df.aic
+						img(src="img/red-cross.svg" alt="Ico")
+						span у вас недостаточно средств на счёте
+						a(href="#").btn-full Пополнить счет CU
+
+				h2.mt-25 Вес
+
+				.grey-block
+					.grey-block__block.df.aic
+						.grey-block__text 0 кг.
+						p полный вес заказа
+
+				h2.mt-25 Контактная информация
+
+				.labels.df.aic
+					.inputs
+						label.form-select.w100
+							span.label-title Шаблон
+							.select.bdrs8
+								input(type="hidden")
+								.select__head.df.aic.jcsb
+									.select__current Выберите из списка шаблонов
+									img(src="img/triangle.svg" alt="Ico")
+								.select__body
+									.select__item Выберите из списка шаблонов
+									.select__item Выберите из списка шаблонов1
+									.select__item Выберите из списка шаблонов2
+						label
+							span.label-title Адрес
+							input(type="text" placeholder="Введите адрес")
+						label
+							span.label-title ФИО контактного лица
+							input(type="text" placeholder="Введите ФИО контактного лица")
+
+						.inputs.df
+							label
+								span.label-title Телефон
+								input(type="text" placeholder="Введите телефон")
+							label
+								span.label-title Email
+								input(type="text" placeholder="Введите Email")
+					.textarea
+						label
+							span.label-title Комментарий к заказу, необязательно
+							textarea(placeholder="Введите комментарий, если он есть")
+
+			.client-payment__block
+
+				h2 Оплата заказа
+
+				.label
+					input(type="radio")#id-label-2
+					label(for="id-label-2") Напрямую продавцу
+
+				.grey-block
+					.grey-block__block.df.aic
+						.grey-block__text $13,51
+						p Эту сумму вам нужно будет оплатить напрямую продавцу. <br />Подробные данные продавца вы увидите в заказе после его оформления.
+
+				.label.df.aic.aife.finpass
+					label
+						span.label-title Финансовый пароль (был Вам выслан при регистрации)
+						input(type="text" placeholder="*************************")
+					button.btn-full Купить
+
+			
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

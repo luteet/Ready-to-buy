@@ -1,0 +1,135 @@
+extends includes/header-add.pug
+
+block content
+
+	.wrapper.df
+		//- include includes/aside-client.pug
+		main.w100.page-register
+			//- .breadcrumbs
+				a(href="#")
+					span Главная
+				span Связь с Площадкой
+
+
+			h1 Регистрация
+
+			.label
+				span.subtitle Вы можете пройти регистрацию или войти <br />через социальные сети.
+				.page-login__socials.df.aic.jcc
+					a(href="#").df.aic
+						img(src="img/google.png" alt="Ico")
+						span с помощью Google
+					a(href="#").df.aic
+						img(src="img/facebook.png" alt="Ico")
+						span с помощью Faceebook
+
+			form(action="#")
+
+				.label.label-radio
+					span.label-title Выберите тип пользователя
+					.inputs.df.aic
+						input(type="radio" checked name="radio-who")#radio-id-1
+						label(for="radio-id-1") Клиент
+						input(type="radio" name="radio-who")#radio-id-2
+						label(for="radio-id-2") Продавец
+						input(type="radio" name="radio-who")#radio-id-3
+						label(for="radio-id-3") Партнёр
+
+				.inputs.dg
+					label
+						span.label-title Фамилия
+						input(type="text" required placeholder="Введите фамилию")
+					label
+						span.label-title Имя
+						input(type="text" placeholder="Введите имя")
+					label
+						span.label-title Отчество
+						input(type="text" placeholder="Введите отчество")
+
+				.inputs.dg
+					label.label-of-date
+						span.label-title Дата рождения
+						.input.df.aic.bdrs8
+							input(type="text" placeholder="Выберите дату рождения").input-date
+							img(src="img/calendar.svg" alt="Ico")
+					label.form-select.w100.input-big
+						span.label-title Страна
+						.select.bdrs8
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Выберите страну
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Выберите из списка шаблонов
+								.select__item Выберите из списка шаблонов1
+								.select__item Выберите из списка шаблонов2
+					label
+						span.label-title Мобильный телефон
+						input(type="text" placeholder="Введите номер телефона")
+
+				.inputs.dg
+					label
+						span.label-title Эл. почта
+						input(type="date" placeholder="Введите эл. почту")
+					label
+						span.label-title Подтвердить эл. почту
+						input(type="text" placeholder="Введите эл. почту")
+
+				.inputs.dg
+					label
+						span.label-title Пароль
+						input(type="date" placeholder="Введите пароль")
+					label
+						span.label-title Подтвердить пароль
+						input(type="text" placeholder="Введите пароль")
+
+				input(type="checkbox")#ch-id-1
+				label(for="ch-id-1").form__checkbox С 
+					a(href="#") правовыми положениями 
+					| проекта ознакомлен и согласен.
+
+				.recaptcha
+					img(src="img/recaptcha.jpg" alt="Ico")
+
+				button(type="submit" data-popup="email").btn-full Зарегистрироваться
+
+
+	.popup.popup__email
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 E-mail уже занят
+			p Этот E-mail уже зарегистрирован в нашей системе. <br />Пожалуйста, укажите другой E-mail.
+			button.btn-grey-full.popup__close.bdrs8 Закрыть
+			
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

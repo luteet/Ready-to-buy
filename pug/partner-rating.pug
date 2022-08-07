@@ -1,0 +1,119 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-partner.pug
+		main.w100.partner-rating
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Клиентам
+					span Счет CU
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Рейтинг
+				a(href="#" data-popup="account-link").link Информация о разделе «Рейтинг»
+
+			h2 Рейтинг партнёров площадки
+
+			.partner-rating__sides.df.aife
+				label.form-select.w100.input-big
+					span.label-title Выбрать период
+					.select.bdrs8
+						input(type="hidden")
+						.select__head.df.aic.jcsb
+							.select__current Октябрь 2021
+							img(src="img/triangle.svg" alt="Ico")
+						.select__body
+							.select__item Октябрь 2021
+							.select__item Октябрь 2022
+							.select__item Октябрь 2023
+				button.btn-bd Печать рейтинга
+
+
+			.table-ovf
+				table.w100
+					thead
+						tr
+							td №
+							td Партнёр
+							td Квалификация
+					tbody
+						tr
+							td 1
+							td
+								.persone.df.aic
+									.photo.photo_yellow ВЕ
+									p Вешкурцев Евгений Анатольевич
+							td 35%
+						tr
+							td 2
+							td
+								.persone.df.aic
+									.photo.photo_green ВЕ
+									p Вешкурцев Евгений Анатольевич
+							td 32%
+						tr
+							td 3
+							td
+								.persone.df.aic
+									.photo.photo_blue ВЕ
+									p Вешкурцев Евгений Анатольевич
+							td 28%
+						tr
+							td 4
+							td
+								.persone.df.aic
+									.photo.photo_pink ВЕ
+									p Вешкурцев Евгений Анатольевич
+							td 25%
+
+
+
+
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

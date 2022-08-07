@@ -1,0 +1,60 @@
+extends includes/header-add.pug
+
+block content
+
+	.wrapper.df
+		//- include includes/aside-client.pug
+		main.w100.page-login.page-recovery
+			//- .breadcrumbs
+				a(href="#")
+					span Главная
+				span Связь с Площадкой
+
+
+			h1 Восстановление пароля
+
+			form(action="#")
+
+				.label-mini
+					label
+						span Логин
+						input(type="text" placeholder="Введите логин")
+
+				.recaptcha
+					img(src="img/recaptcha.jpg" alt="Ico")
+
+				button(type="submit").btn-full Получить пароль
+
+				a(href="#").cancel Отмена
+
+			
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

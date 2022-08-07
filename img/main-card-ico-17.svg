@@ -1,0 +1,5 @@
+<svg id="currency" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <path id="Контур_12820" data-name="Контур 12820" d="M16,4A12,12,0,1,1,4,16,12,12,0,0,1,16,4m0-2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Z" fill="#bcbcbc"/>
+  <rect id="_Transparent_Rectangle_" data-name="&lt;Transparent Rectangle&gt;" width="32" height="32" fill="none"/>
+  <text id="Б" transform="translate(12 21)" fill="#bcbcbc" font-size="12" font-family="Roboto-Bold, Roboto" font-weight="700" letter-spacing="0.005em"><tspan x="0" y="0">Б</tspan></text>
+</svg>

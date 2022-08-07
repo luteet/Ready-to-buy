@@ -1,0 +1,85 @@
+extends includes/header-add.pug
+
+block content
+
+	.wrapper.df
+		//- include includes/aside-client.pug
+		main.w100.page-login
+			//- .breadcrumbs
+				a(href="#")
+					span Главная
+				span Связь с Площадкой
+
+
+			h1 Вход в личный кабинет
+
+			form(action="#")
+
+				.label
+					span.subtitle Вы можете войти через социальные сети
+					.page-login__socials.df.aic.jcc
+						a(href="#").df.aic
+							img(src="img/google.png" alt="Ico")
+							span с помощью Google
+						a(href="#").df.aic
+							img(src="img/facebook.png" alt="Ico")
+							span с помощью Faceebook
+
+				.label-mini
+					label
+						span Логин
+						input(type="text" placeholder="Введите логин")
+					label
+						span Пароль
+						.input
+							input(type="password" placeholder="Введите пароль")
+							.eye
+								img(src="img/eye2.svg")
+
+					input(type="checkbox")#ch-login-1
+					label(for="ch-login-1").form__checkbox Запомнить пароль
+
+				.recaptcha
+					img(src="img/recaptcha.jpg" alt="Ico")
+
+				button(type="submit").btn-full Войти
+
+				p.subtitle Уже зарегистрированы, но не знаете свой пароль? <br />Вы можете 
+					a(href="#") получить пароль на email,
+					|  если он верно указан.
+
+				.form__bottom
+					p.subtitle Еще не зарегистрированы?
+					a(href="#").btn-bd Регистрация
+
+			
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

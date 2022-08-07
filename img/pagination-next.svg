@@ -1,0 +1,15 @@
+<svg id="caret--right_20" data-name="caret--right / 20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5" height="8.75" viewBox="0 0 5 8.75">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Контур_4319" data-name="Контур 4319" d="M319.125-47.375l5,4.375-5,4.375Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Контур_4318" data-name="Контур 4318" d="M0-19H345V-67H0Z" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Сгруппировать_4274" data-name="Сгруппировать 4274" transform="translate(-319.125 47.375)" clip-path="url(#clip-path)">
+    <g id="Сгруппировать_4273" data-name="Сгруппировать 4273" clip-path="url(#clip-path-2)">
+      <path id="Контур_4317" data-name="Контур 4317" d="M314.125-52.375h15v18.75h-15Z" fill="#161616"/>
+    </g>
+  </g>
+</svg>

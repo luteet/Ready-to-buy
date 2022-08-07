@@ -1,0 +1,647 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-partner.pug
+		main.w100.partner-structure
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Структура
+				a(href="#" data-popup="account-link").link Информация о разделе «Структура»
+
+
+				.account.df
+
+					.account__item
+
+						p Текущий период
+						big Ноябрь 2021
+
+					.account__item
+
+						p Статус
+						big Партнёр
+
+					.account__item
+
+						p Квалификация
+						big 0%
+
+					.account__item
+
+						.p.df.aic
+							span ЛО
+							.block-with-question
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								img(src="img/question.svg" alt="Quoestion")
+						big 0
+
+					.account__item
+
+						.p.df.aic
+							span СО
+							.block-with-question
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								img(src="img/question.svg" alt="Quoestion")
+						big 500
+
+					.account__item
+
+						.p.df.aic
+							span КО
+							.block-with-question
+								p.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+								img(src="img/question.svg" alt="Quoestion")
+						big 0
+
+			.top-up-account
+				h2 Мой спонсор
+				.top-up-account__block.df.jcsb
+					.top-up-account__item
+						span Логин:
+						p 44734
+					.top-up-account__item
+						span ФИО:
+						p Вешкурцев Евгений Анатольевич
+					.top-up-account__item
+						span E-mail:
+						p veshkurtsev@gmail.com
+					.top-up-account__item
+						span Телефон:
+						p +7 (912) 395 82 86
+
+			h2 Моя структура
+
+			.df.aic
+				p В сети 16516 чел. Прирост за текущий период 
+				.nums.df.aic
+					.num.num_green +2
+					.num.num_grey 0
+					.num.num_red -1
+
+			br
+			p Член Клуба 500 с 04.05.2015 111 ЕФ
+
+
+			.dates.df
+				label.label-of-date
+					span.label-title Период
+					.input.df.aic.bdrs8
+						input(type="text" placeholder="10/06/2022").input-date
+						img(src="img/calendar.svg" alt="Ico")
+
+			.form__buttons_parent.df.w100.aife
+				label
+					span.label-title Логин, или ФИО, или email
+					input(type="text" placeholder="Введите партнёра").w100
+				.form__buttons.df.aic.w100
+
+					button(type="submit").form__submit.btn-bd.bdrs8 Применить
+					button.form__clear Сбросить фильтр
+
+					.exports.df.aic
+						a(href="#" download).downpdf Экспорт в PDF
+						a(href="#" download).downxls Экспорт в XLS
+
+			.table-ovf
+				.table
+					.thead
+						.tr.df
+							.td
+							.td Логин
+							.td ФИО
+							.td Квалификация
+							.td
+								.df
+									span ЛО
+									.block-with-question
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										img(src="img/question.svg" alt="Quoestion")
+							.td
+								.df
+									span СО
+									.block-with-question
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										img(src="img/question.svg" alt="Quoestion")
+							.td
+								.df
+									span КО
+									.block-with-question
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										img(src="img/question.svg" alt="Quoestion")
+							.td В сети
+							.td Прирост
+							.td Поколение
+					.tbody
+						.tr
+							.tr__top.df
+								.td.td_arrow
+									img(src="img/table-arr.svg" alt="Ico")
+									img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+								.td.df.aic
+									img(src="img/search--locate.svg" alt="Ico")
+									span 578033
+								.td Чичкова А. В.
+								.td 0%
+								.td 0
+								.td 450
+								.td 0
+								.td 16514
+								.td +9
+								.td 0
+							.tr__body
+								.table.w100
+									.thead
+										.tr.df
+											.td
+											.td Логин
+											.td ФИО
+											.td Квалификация
+											.td ЛО
+											.td СО
+											.td КО
+											.td В сети
+											.td Прирост
+											.td Поколение
+									.tbody
+										.tr
+											.tr__top.df
+												.td.td_arrow
+													img(src="img/table-arr.svg" alt="Ico")
+													img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+												.td.df.aic
+													img(src="img/search--locate.svg" alt="Ico")
+													span 578033
+												.td Чичкова А. В.
+												.td 0%
+												.td 0
+												.td 450
+												.td 0
+												.td 16514
+												.td +9
+												.td 0
+											.tr__body
+												.table.w100
+													.thead
+														.tr.df
+															.td
+															.td Логин
+															.td ФИО
+															.td Квалификация
+															.td ЛО
+															.td СО
+															.td КО
+															.td В сети
+															.td Прирост
+															.td Поколение
+													.tbody
+														.tr
+															.tr__top.df
+																.td.td_arrow
+																	img(src="img/table-arr.svg" alt="Ico")
+																	img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																.td.df.aic
+																	img(src="img/search--locate.svg" alt="Ico")
+																	span 578033
+																.td Чичкова А. В.
+																.td 0%
+																.td 0
+																.td 450
+																.td 0
+																.td 16514
+																.td +9
+																.td 0
+															.tr__body
+																.table.w100
+																	.thead
+																		.tr.df
+																			.td
+																			.td Логин
+																			.td ФИО
+																			.td Квалификация
+																			.td ЛО
+																			.td СО
+																			.td КО
+																			.td В сети
+																			.td Прирост
+																			.td Поколение
+																	.tbody
+																		.tr
+																			.tr__top.df
+																				.td.td_arrow
+																					img(src="img/table-arr.svg" alt="Ico")
+																					img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																				.td.df.aic
+																					img(src="img/search--locate.svg" alt="Ico")
+																					span 578033
+																				.td Чичкова А. В.
+																				.td 0%
+																				.td 0
+																				.td 450
+																				.td 0
+																				.td 16514
+																				.td +9
+																				.td 0
+																			.tr__body
+														.tr
+															.tr__top.df
+																.td.td_arrow
+																	img(src="img/table-arr.svg" alt="Ico")
+																	img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																.td.df.aic
+																	img(src="img/search--locate.svg" alt="Ico")
+																	span 578033
+																.td Чичкова А. В.
+																.td 0%
+																.td 0
+																.td 450
+																.td 0
+																.td 16514
+																.td +9
+																.td 0
+															.tr__body
+																.table.w100
+																	.thead
+																		.tr.df
+																			.td
+																			.td Логин
+																			.td ФИО
+																			.td Квалификация
+																			.td ЛО
+																			.td СО
+																			.td КО
+																			.td В сети
+																			.td Прирост
+																			.td Поколение
+																	.tbody
+																		.tr.tr-empty
+																			.tr__top.df
+																				.td.td_arrow
+																					img(src="img/table-arr.svg" alt="Ico")
+																					img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																				.td.df.aic
+																					img(src="img/search--locate.svg" alt="Ico")
+																					span 578033
+																				.td Чичкова А. В.
+																				.td 0%
+																				.td 0
+																				.td 450
+																				.td 0
+																				.td 16514
+																				.td +9
+																				.td 0
+																			.tr__body
+						.tr
+							.tr__top.df
+								.td.td_arrow
+									img(src="img/table-arr.svg" alt="Ico")
+									img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+								.td.df.aic
+									img(src="img/search--locate.svg" alt="Ico")
+									span 578033
+								.td Чичкова А. В.
+								.td 0%
+								.td 0
+								.td 450
+								.td 0
+								.td 16514
+								.td +9
+								.td 0
+							.tr__body
+								.table.w100
+									.thead
+										.tr.df
+											.td
+											.td Логин
+											.td ФИО
+											.td Квалификация
+											.td ЛО
+											.td СО
+											.td КО
+											.td В сети
+											.td Прирост
+											.td Поколение
+									.tbody
+										.tr
+											.tr__top.df
+												.td.td_arrow
+													img(src="img/table-arr.svg" alt="Ico")
+													img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+												.td.df.aic
+													img(src="img/search--locate.svg" alt="Ico")
+													span 578033
+												.td Чичкова А. В.
+												.td 0%
+												.td 0
+												.td 450
+												.td 0
+												.td 16514
+												.td +9
+												.td 0
+											.tr__body
+						.tr
+							.tr__top.df
+								.td.td_arrow
+									img(src="img/table-arr.svg" alt="Ico")
+									img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+								.td.df.aic
+									img(src="img/search--locate.svg" alt="Ico")
+									span 578033
+								.td Чичкова А. В.
+								.td 0%
+								.td 0
+								.td 450
+								.td 0
+								.td 16514
+								.td +9
+								.td 0
+							.tr__body
+								.table.w100
+									.thead
+										.tr.df
+											.td
+											.td Логин
+											.td ФИО
+											.td Квалификация
+											.td ЛО
+											.td СО
+											.td КО
+											.td В сети
+											.td Прирост
+											.td Поколение
+									.tbody
+										.tr
+											.tr__top.df
+												.td.td_arrow
+													img(src="img/table-arr.svg" alt="Ico")
+													img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+												.td.df.aic
+													img(src="img/search--locate.svg" alt="Ico")
+													span 578033
+												.td Чичкова А. В.
+												.td 0%
+												.td 0
+												.td 450
+												.td 0
+												.td 16514
+												.td +9
+												.td 0
+											.tr__body
+												.table.w100
+													.thead
+														.tr.df
+															.td
+															.td Логин
+															.td ФИО
+															.td Квалификация
+															.td
+																.df
+																	span ЛО
+																	.block-with-question
+																		p.
+																			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+																		img(src="img/question.svg" alt="Quoestion")
+															.td
+																.df
+																	span СО
+																	.block-with-question
+																		p.
+																			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+																		img(src="img/question.svg" alt="Quoestion")
+															.td
+																.df
+																	span КО
+																	.block-with-question
+																		p.
+																			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+																			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+																		img(src="img/question.svg" alt="Quoestion")
+															.td В сети
+															.td Прирост
+															.td Поколение
+													.tbody
+														.tr
+															.tr__top.df
+																.td.td_arrow
+																	img(src="img/table-arr.svg" alt="Ico")
+																	img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																.td.df.aic
+																	img(src="img/search--locate.svg" alt="Ico")
+																	span 578033
+																.td Чичкова А. В.
+																.td 0%
+																.td 0
+																.td 450
+																.td 0
+																.td 16514
+																.td +9
+																.td 0
+															.tr__body
+																.table.w100
+																	.thead
+																		.tr.df
+																			.td
+																			.td Логин
+																			.td ФИО
+																			.td Квалификация
+																			.td ЛО
+																			.td СО
+																			.td КО
+																			.td В сети
+																			.td Прирост
+																			.td Поколение
+																	.tbody
+																		.tr
+																			.tr__top.df
+																				.td.td_arrow
+																					img(src="img/table-arr.svg" alt="Ico")
+																					img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																				.td.df.aic
+																					img(src="img/search--locate.svg" alt="Ico")
+																					span 578033
+																				.td Чичкова А. В.
+																				.td 0%
+																				.td 0
+																				.td 450
+																				.td 0
+																				.td 16514
+																				.td +9
+																				.td 0
+																			.tr__body
+														.tr
+															.tr__top.df
+																.td.td_arrow
+																	img(src="img/table-arr.svg" alt="Ico")
+																	img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																.td.df.aic
+																	img(src="img/search--locate.svg" alt="Ico")
+																	span 578033
+																.td Чичкова А. В.
+																.td 0%
+																.td 0
+																.td 450
+																.td 0
+																.td 16514
+																.td +9
+																.td 0
+															.tr__body
+																.table.w100
+																	.thead
+																		.tr.df
+																			.td
+																			.td Логин
+																			.td ФИО
+																			.td Квалификация
+																			.td ЛО
+																			.td СО
+																			.td КО
+																			.td В сети
+																			.td Прирост
+																			.td Поколение
+																	.tbody
+																		.tr
+																			.tr__top.df
+																				.td.td_arrow
+																					img(src="img/table-arr.svg" alt="Ico")
+																					img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+																				.td.df.aic
+																					img(src="img/search--locate.svg" alt="Ico")
+																					span 578033
+																				.td Чичкова А. В.
+																				.td 0%
+																				.td 0
+																				.td 450
+																				.td 0
+																				.td 16514
+																				.td +9
+																				.td 0
+																			.tr__body
+						.tr
+							.tr__top.df
+								.td.td_arrow
+									img(src="img/table-arr.svg" alt="Ico")
+									img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+								.td.df.aic
+									img(src="img/search--locate.svg" alt="Ico")
+									span 578033
+								.td Чичкова А. В.
+								.td 0%
+								.td 0
+								.td 450
+								.td 0
+								.td 16514
+								.td +9
+								.td 0
+							.tr__body
+								.table.w100
+									.thead
+										.tr.df
+											.td
+											.td Логин
+											.td ФИО
+											.td Квалификация
+											.td ЛО
+											.td СО
+											.td КО
+											.td В сети
+											.td Прирост
+											.td Поколение
+									.tbody
+										.tr
+											.tr__top.df
+												.td.td_arrow
+													img(src="img/table-arr.svg" alt="Ico")
+													img(src="img/table-arr-hover.svg" alt="Ico").ico-hover
+												.td.df.aic
+													img(src="img/search--locate.svg" alt="Ico")
+													span 578033
+												.td Чичкова А. В.
+												.td 0%
+												.td 0
+												.td 450
+												.td 0
+												.td 16514
+												.td +9
+												.td 0
+											.tr__body
+
+
+
+
+
+	.popup.popup__cash-ok
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Валюта продавца
+			p Валютой продавца был выбран Российский рубль (RUB).
+			p Информация сохранена.
+			button.btn-grey-full.popup__close.bdrs8 Закрыть
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

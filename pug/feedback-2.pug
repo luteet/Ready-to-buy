@@ -1,0 +1,78 @@
+extends includes/header-add.pug
+
+block content
+
+	.wrapper.df
+		//- include includes/aside-client.pug
+		main.w100.page-feedback
+			.breadcrumbs
+				a(href="#")
+					span Главная
+				span Связь с Площадкой
+
+
+			h1 Связь с Площадкой
+
+			form(action="#")
+
+				.page-feedback__inputs.df.aic
+
+					label.form-select.w100.input-big
+						span.label-title Тема обращения
+						.select.bdrs8
+							input(type="hidden")
+							.select__head.df.aic.jcsb
+								.select__current Выберите тему
+								img(src="img/triangle.svg" alt="Ico")
+							.select__body
+								.select__item Выберите из списка шаблонов
+								.select__item Выберите из списка шаблонов1
+								.select__item Выберите из списка шаблонов2
+
+					label
+						span.label-title Заголовок обращения
+						input(placeholder="Введите заголовок")
+
+					//- label
+						span.label-title Контактный E-mail
+						input(placeholder="Введите Ваш E-mail")
+
+				label
+					span.label-title Текст обращения
+					textarea(placeholder="Введите текст").w100
+
+				button(type="Submit").btn-full Отправить
+
+
+
+			
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

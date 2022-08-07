@@ -1,0 +1,8 @@
+.page-favorites__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    & > * {
+        width: calc(100% - 20px);
+    }
+}

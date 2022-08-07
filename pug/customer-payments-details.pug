@@ -1,0 +1,243 @@
+extends includes/header.pug
+
+block content
+
+	.wrapper.df
+		include includes/aside-customer.pug
+		main.w100.customer-payments-details
+			.main__top
+				.breadcrumbs
+					a(href="#")
+						span Главная
+					a(href="#")
+						span Продавцам
+					a(href="#")
+						span  Мои товары
+					span Добавить товар
+
+				button.menu-mob.df.aic
+					img(src="img/menu-mob-dots.svg" alt="Dots")
+					span Меню для клиента
+
+				h1 Платежные реквизиты
+				a(href="#" data-popup="account-link").link Информация о разделе «Платежные реквизиты»
+
+			.customer-payments-details__system
+
+				h2 Платежная система
+
+				p.subtitle
+					b Внимание! 
+					| Если Вы укажете оба способа оплаты, при оформлении заказа покупатель сможет выбрать один из этих способов на свое усмотрение, и тогда все товары/услуги в заказе будут оплачены единым выбранным способом.
+
+				input(type="checkbox")#ch-method-id-1
+				label(for="ch-method-id-1").form__checkbox Напрямую продавцу
+				input(type="checkbox" disabled)#ch-method-id-2
+				label(for="ch-method-id-2").form__checkbox.df.aic
+					span На счёт продавцу
+					.block-with-question
+						p.
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+						img(src="img/question.svg" alt="Quoestion")
+				input(type="checkbox")#ch-method-id-3
+				label(for="ch-method-id-3").form__checkbox Банковской картой
+
+				button.btn-bd Сохранить
+
+			.customer-my-products__tabs-various
+
+				.customer-my-products__tabs.df.aic
+					.tab.tab_active
+						span Внутри Грузии
+					.tab
+						span Зарубежные переводы
+
+				label.select__tabs
+					span.label-title Статус товаров
+					.select.bdrs8
+						.select__head.df.aic.jcsb
+							.select__current
+								span Внутри Грузии
+							img(src="img/triangle.svg" alt="Ico")
+								
+						.select__body
+							.tab.select__item
+								span Внутри Грузии
+							.tab.select__item
+								span Зарубежные переводы
+			.customer-my-products__inner
+
+				.customer-my-products__block
+
+					.customer-payments-details__details
+
+						h2 Реквизиты счета
+
+						p.subtitle
+							b Внимание! 
+							| Банковские реквизиты должны быть внесены английскими буквами. <br />Пожалуйста, обратитесь в свой банк для уточнения правильного написания реквизитов.
+
+						.customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label.label-nbsp &nbsp
+							label
+								span.label-title Адрес банка продавца
+								input(placeholder="Введите адрес")
+							//- label
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						.customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label
+								span.label-title Адрес банка продавца
+								input(placeholder="Введите адрес")
+							label
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						//- .customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label
+								span.label-title.df.aic
+									span Адрес продавца
+									.block-with-question
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										img(src="img/question.svg" alt="Quoestion")
+								input(placeholder="Введите адрес")
+							label.label-index
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						button.btn-bd Сохранить
+
+
+				.customer-my-products__block
+
+					.customer-payments-details__details
+
+						h2 Реквизиты счета
+
+						p.subtitle
+							b Внимание! 
+							| Банковские реквизиты должны быть внесены английскими буквами. <br />Пожалуйста, обратитесь в свой банк для уточнения правильного написания реквизитов.
+
+						.customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label.label-nbsp &nbsp
+							label
+								span.label-title Адрес банка продавца
+								input(placeholder="Введите адрес")
+							label
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						.customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label
+								span.label-title Адрес банка продавца
+								input(placeholder="Введите адрес")
+							label
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						//- .customer-payments-details__block
+
+							label
+								span.label-title Название банка продавца
+								input(placeholder="Введите название банка")
+							label
+								span.label-title.df.aic
+									span Адрес продавца
+									.block-with-question
+										p.
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+										img(src="img/question.svg" alt="Quoestion")
+								input(placeholder="Введите адрес")
+							label.label-index
+								span.label-title SWIFT-код банка продавца (8 или 11 знаков)
+								input(placeholder="Введите SWIFT-код")
+
+						button.btn-bd Сохранить
+
+	.popup.popup__no-to-edit
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Редактирование адреса невозможно
+			p На текущий момент есть N невыполненная продажа. <br />Редактирование адреса станет вновь возможна после выполнения продажи.
+			button.btn-grey-bd.popup__close Закрыть
+
+	.popup.popup__delete-address
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 Удаление адреса
+			.popup__product
+				b Товар (силами продавца) 
+				p Россия, г Москва, ул 6-ая Кожуховская 15/2
+			p Вы действительно хотите удалить данный адрес отгрузки?
+			.df.aic.jcsb
+				button.btn-grey-bd.w100.popup__close Закрыть
+				button.btn-grey-full.w100 Удалить адрес
+
+	.popup.popup__account-link
+		.popup__bgd
+		.popup__content
+			.popup__cross.popup__close
+				img(src="img/close.svg" alt="Ico")
+			h2 О внутренней системе клиентских единиц (Customer Unit - CU)
+			p В данном разделе Вы можете посмотреть: <br /><br />- курс CU на сегодняшний день <br />- состояние Вашего персонального счета в долларах <br />- состояние счета CU в долларах.
+			p Пополнить свой личный кошелек с помощью денег на Вашем персональном счете, Вы можете выбрав сумму в долларах и нажав кнопку Обновить. Вы сразу же сможете увидеть, какое количество CU будет добавлено в Ваш кошелек с учетом курса.<br /><br />В первой таблице на этой странице Вы можете видеть все движения по счету. Если Вам нужно посмотреть движения по счету за какой-то определенный период, необходимо установить даты интересующего периода в фильтре, который находится сверху таблицы, и нажать кнопку «Установить фильтр». Если вы хотите снова видеть все данные в таблице, необходимо нажать кнопку «Сбросить фильтр».<br /><br />При желании данные таблицы Вы можете загрузить к себе на компьютер в форматах PDF и XLS.
+			button.popup__button.popup__close.bdrs8 Закрыть
+
+	include includes/footer.pug
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
