@@ -5494,6 +5494,9 @@ body.page-add footer {
   justify-content: center;
   background: #fff
 }
+.page-catalog {
+  overflow: hidden
+}
 .page-catalog__list {
   display: -ms-grid;
   display: grid;
