@@ -12,8 +12,10 @@ $(document).ready(function () {
 
 
 
-	new AirDatepicker('.input-date', {
+	document.querySelectorAll('.input-date').forEach(inputDate => {
+		new AirDatepicker(inputDate, {
 	    
+		})
 	})
 
 	let dpMin, dpMax;
@@ -196,6 +198,17 @@ $(document).ready(function () {
 	function resize() {
 	
 		windowSize = window.innerWidth
+
+		let btnFavorite = $('.btn-add-to-favorite');
+		if(btnFavorite[0]) {
+			if((windowSize - btnFavorite.offset().left) < 100) {
+				btnFavorite.addClass('left-pos');
+			} else {
+				btnFavorite.removeClass('left-pos');
+			}
+		}
+		
+
 
 		resizeCheckFunc(768,
 		function () {  // screen > 768px
@@ -1027,3 +1040,22 @@ $('.open-popup').on('click', function(event) {
 	popup($(this).attr('href'));
 })
 
+$('.aside-filter__range--text').on('input', function() {
+	//console.log($(this).val('123'))
+	let value = $(this).val();
+	$(this).val($(this).data('currency') + value.replace(/[^+\d]/g, ''));
+	/* $(this).val($(this).data('currency') + $(this).val().slice(1)); */
+
+})
+
+$('.btn-change-on-hover').hover(
+	function() {
+		$(this).text($(this).data('hover-text'))
+	},
+	function() {
+		$(this).text($(this).data('default-text'))
+	})
+
+$('.btn-add-to-favorite').on('click', function() {
+	$(this).toggleClass('active');
+})

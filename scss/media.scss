@@ -1202,9 +1202,12 @@
 	.my-order__success-delivery .ico-hover{
 		right: 5px;
 	}
-	.my-order__item:nth-last-child(2){
-		margin-bottom: 20px;
+	.my-order__bottom {
+		padding: 16px 0 15px 5px;
 	}
+	/* .my-order__item:nth-last-child(2){
+		margin-bottom: 20px;
+	} */
 	.customer-main__item{
 		margin-right: 8px;
 		min-width: 322px;
@@ -1438,7 +1441,7 @@
 	.my-order__success-delivery,
 	.my-order__info-order{
 		padding: 0 5px;
-		margin: 0;
+		//margin: 0;
 	}
 	.my-order__success-delivery span,
 	.my-order__info-order span{

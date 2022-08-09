@@ -90,8 +90,13 @@ block content
 							.counter__minus -
 							input(value="1" type="text").counter__num
 							.counter__plus +
-						button.btn-full Купить
-						img(src="img/green-heart.svg" alt="Ico")
+						button(data-default-text="Купить" data-hover-text="В корзину").btn-full.btn-change-on-hover Купить
+						button(aria-label="Добавить в избранное").btn-add-to-favorite
+							.btn-add-to-favorite-icon-default
+								include ../img/green-heart.svg
+							.btn-add-to-favorite-icon-active
+								include ../img/green-heart-active.svg
+						
 
 					.product__text
 						span Склад: 
@@ -131,84 +136,77 @@ block content
 						p Друзья, всем привет! В нашем интернет магазине находится только качественная обувь. И мы хотим предоставить вам возможность оценить и почувствовать на себе в полной мере наш качественный продукт, а самое главное, цена намного ниже, чем в обычных магазинах. Каждый месяц проходят акции и скидки на весь ассортимент. Территориально мы находимся в г.Новоуральск, доставка по городу бесплатно, также отправляем по Всему миру !!!
 						
 			.page-single__else.df.jcsb
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 
 						span $74
 						| )
 					button.card__button.btn-bd Купить
-				.card
+				a(href="single.html").card
 					.card__photo
 						img(src="img/photo1.jpg" alt="Photo")
 					small.card__type Обувь
-					h3.card__title
-						a(href="#") Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
+					h3.card__title Кроссовки REEBOK ROYAL EC RID FTWWHT/BLACK/DYNRED
 					.card__price
 						b $199 
 						| ($125 + 

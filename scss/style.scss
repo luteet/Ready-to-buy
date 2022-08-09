@@ -503,6 +503,10 @@ button{
 		background: #eee;
 		border-radius: 8px;
 	}
+	&:hover &__button{
+		background: var(--green);
+		color: #fff;
+	}
 	&__photo{
 		text-align: center;
 		margin-bottom: 4px;
@@ -524,13 +528,11 @@ button{
 		font-size: 16px;
 		margin-bottom: 8px;
 		font-weight: normal;
-		a{
-			transition: all .3s ease;
-			word-break: break-all;
-			&:hover{
-				color: #26C1FA;
-				text-decoration: underline;
-			}
+		transition: all .3s ease;
+		word-break: break-all;
+		&:hover{
+			color: #26C1FA;
+			text-decoration: underline;
 		}
 	}
 	&__price{
@@ -780,6 +782,9 @@ button{
 	z-index: 1;
 	transition: z-index 0s .3s;
 	transition: all .3s ease;
+	&.select_active &__head > img {
+		transform: scaleY(-1);
+	}
 	&__head{
 		padding: 12px 10px;
 		cursor: pointer;
@@ -789,6 +794,9 @@ button{
 		border: 1px solid #DDDDDD;
 		z-index: 1;
 		position: relative;
+		& > img {
+			transition: transform .2s ease-in-out;
+		}
 	}
 	&__body{
 		display: none;
@@ -1740,12 +1748,18 @@ label{
 .my-order{
 	background: #F7F7F7;
 	margin-top: 24px;
-	padding: 16px;
+	padding: 16px 16px 0 16px;
 	border-bottom: 1px solid #E0E0E0;
+
+	display: grid;
+	grid-template-columns: auto auto;
+
 	&__item{
-		margin-bottom: 20px;
-		&:last-child{
-			margin-bottom: 0;
+		//margin-bottom: 20px;
+		grid-column: 1/1;
+		margin-bottom: 16px;
+		&.full {
+			grid-column: 1/3;
 		}
 		.item__delete{
 			border: 1px solid #E6E6E6;
@@ -1754,11 +1768,17 @@ label{
 			border-radius: 8px;
 			margin-left: 16px;
 			transition: all .3s ease;
+			& svg rect, & svg path {
+				transition: fill .3s ease;
+			}
 			&:hover{
 				background: #777;
 			}
 			img{
 				display: block;
+			}
+			&:hover svg rect, &:hover svg path {
+				fill: #fff;
 			}
 		}
 		.item__rht{
@@ -1820,6 +1840,7 @@ label{
 		}
 	}
 	&__top{
+		grid-column: 1/3;
 		margin-bottom: 13px;
 		span{
 			font-size: 14px;
@@ -1828,7 +1849,15 @@ label{
 		}
 	}
 	&__bottom{
+		padding: 26px 10px 24px 0;
 		justify-content: flex-end;
+		flex-wrap: wrap;
+		align-items: flex-end;
+
+		margin: -16px;
+		& > * {
+			margin: 8px;
+		}
 	}
 	&__success-delivery{
 		color: var(--green);
@@ -1866,9 +1895,12 @@ label{
 		background: #fff;
 		height: 30px;
 		padding: 0 8px;
-		margin-left: 16px;
+		//margin-left: 16px;
 		transition: all .3s ease;
 		white-space: nowrap;
+		& svg rect, & svg path {
+			transition: fill .2s ease-in-out;
+		}
 		&:hover{
 			background: #777;
 			span{
@@ -1876,6 +1908,9 @@ label{
 			}
 			.ico-hover{
 				opacity: 1;
+			}
+			svg rect, svg path {
+				fill: #fff;
 			}
 		}
 		span{
@@ -4385,7 +4420,7 @@ table{
 			align-items: center;
 			justify-content: center;
 			margin-right: 7px;
-			font-size: 14px;
+			font-size: 20px;
 			line-height: 19px;
 			color: var(--green);
 		}
@@ -4584,6 +4619,11 @@ table{
 			max-width: 180px;
 			width: 100%;
 			margin: 0 24px;
+			&.btn-add-to-favorite {
+				width: auto;
+				margin: 0;
+				padding: 15px 0;
+			}
 		}
 	}
 	.product__stock,
@@ -4595,6 +4635,7 @@ table{
 			font-size: 14px;
 			color: var(--green);
 			margin-left: 5px;
+			white-space: nowrap;
 		}
 	}
 	.rht__stars,
@@ -5226,6 +5267,9 @@ body{
 			left: 8px;
 			right: auto;
 		}
+		.my-order__success-delivery:hover svg rect {
+			fill: #fff;
+		}
 		.my-order__top span{
 			margin-left: 20px;
 			margin-right: 0;
@@ -5253,6 +5297,7 @@ body{
 		.customer-info ul .ico{
 			margin-left: 7px;
 			margin-right: 0;
+			font-size: 20px;
 		}
 		.customer-info .green-block span{
 			margin-right: 16px;
@@ -5415,6 +5460,78 @@ body{
 @import "pages/shops.scss";
 @import "pages/shop.scss";
 @import "pages/search.scss";
+
+.btn-add-to-favorite {
+	display: inline-grid;
+	position: relative;
+
+	&.left-pos {
+		&::before {
+			left: 20px;
+			transform: translate(-100%,-100%);
+		}
+	}
+
+	@media(any-hover) {
+		&::before {
+			content: attr(aria-label);
+			position: absolute;
+			left: 50%; top: 1px;
+			transform: translate(-50%,-100%);
+	
+			font-size: 14px;
+			line-height: 133%;
+	
+			min-width: 111px;
+			padding: 4px;
+	
+			pointer-events: none;
+	
+			background: #383838;
+			color: #fff;
+			border-radius: 3px;
+	
+			opacity: 0;
+			transition: opacity .2s ease;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			left: 50%; top: 0;
+			transform: translate(-50%, 0);
+			border-right: 7px solid transparent;
+			border-left: 7px solid transparent;
+			border-top: 7px solid #383838;
+			
+			opacity: 0;
+			transition: opacity .2s ease;
+			pointer-events: none;
+		}
+		&:hover::before, &:hover::after {
+			opacity: 1;
+		}
+	}
+	
+
+	&-icon-active {
+		opacity: 0;
+	}
+
+	&.active &-icon-active {
+		opacity: 1;
+	}
+
+	&.active::before, &.active::after {
+		opacity: 0;
+	}
+
+	& > * {
+		grid-area: 1/1;
+
+		transition: opacity .2s ease;
+	}
+
+}
 
 
 
