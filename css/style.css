@@ -2298,6 +2298,9 @@ label input::-webkit-inner-spin-button {
   -webkit-transition: fill 0.3s ease;
   transition: fill 0.3s ease;
 }
+.my-order__item .item__delete svg {
+  display: block;
+}
 .my-order__item .item__delete:hover {
   background: #D3D3D3;
 }
@@ -3173,6 +3176,10 @@ input[type=radio]:checked + label:after {
 
 input[type=checkbox]:disabled + label:before {
   opacity: 0.5;
+}
+
+input[type=checkbox].light-icon:disabled + label:before {
+  opacity: 1;
 }
 
 input[type=checkbox]:disabled + label {

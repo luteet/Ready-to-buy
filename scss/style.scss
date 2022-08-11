@@ -1815,6 +1815,9 @@ label{
 			& svg rect, & svg path {
 				transition: fill .3s ease;
 			}
+			& svg {
+				display: block;
+			}
 			&:hover{
 				background: #D3D3D3;
 			}
@@ -2696,6 +2699,9 @@ input[type="radio"]:checked + label{
 
 input[type="checkbox"]:disabled + label:before{
 	opacity: 0.5;
+}
+input[type="checkbox"].light-icon:disabled + label:before{
+	opacity: 1;
 }
 input[type="checkbox"]:disabled + label{
 	color: #B5B5B5;
