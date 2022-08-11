@@ -1758,6 +1758,9 @@ label{
 		//margin-bottom: 20px;
 		grid-column: 1/1;
 		margin-bottom: 16px;
+		
+		
+
 		&.full {
 			grid-column: 1/3;
 		}
@@ -1767,19 +1770,60 @@ label{
 			background: #fff;
 			border-radius: 8px;
 			margin-left: 16px;
+			position: relative;
+			&::before, &::after {
+				position: absolute;
+				left: 50%;
+				
+				transition: all 0.3s ease;
+				pointer-events: none;
+				opacity: 0;
+				visibility: hidden;
+			}
+			&::before {
+				content: attr(aria-label);
+				transform: translate(-50%,0%);
+				display: block;
+				
+				padding: 3px 4px;
+				color: #fff;
+				font-size: 14px;
+				width: fit-content;
+				white-space: nowrap;
+				transform: translateX(-50%);
+				bottom: calc(100% + 6px);
+				
+				background: #383838;
+				border-radius: 3px;
+				
+			}
+			&::after {
+				content: '';
+				border-right: 3px solid transparent;
+				border-left: 3px solid transparent;
+				border-top: 3px solid #383838;
+				bottom: calc(100% + 3px);
+				transform: translate(-50%,0);
+				
+			}
+			&:hover {
+				&::before, &::after {
+					opacity: 1; visibility: visible;
+				}
+			}
 			transition: all .3s ease;
 			& svg rect, & svg path {
 				transition: fill .3s ease;
 			}
 			&:hover{
-				background: #777;
+				background: #D3D3D3;
 			}
 			img{
 				display: block;
 			}
-			&:hover svg rect, &:hover svg path {
+			/* &:hover svg rect, &:hover svg path {
 				fill: #fff;
-			}
+			} */
 		}
 		.item__rht{
 			margin-left: auto;
@@ -2303,6 +2347,12 @@ input:disabled{
 			position: relative;
 			transition: all .3s ease;
 			cursor: pointer;
+			&:first-child {
+				border-radius: 4px 0 0 4px;
+			}
+			&:last-child{
+				border-radius: 0 4px 4px 0;
+			}
 			span{
 				font-size: 14px;
 				color: #525252;

@@ -215,6 +215,11 @@
             
         }
 
+        &--body:hover &--link {
+            background: var(--green);
+            color: var(--white);
+        }
+
         // .page-shops__card--image
 
         &--image {
@@ -287,6 +292,9 @@
             font-size: 14px;
             
             background: #E6E6E6;
+
+            transition: color .2s ease-in-out, background .2s ease-in-out;
+            
         }
     }
 }
